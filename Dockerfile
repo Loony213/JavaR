@@ -10,5 +10,8 @@ COPY HelloWorld.java /app/
 # Compilar el archivo Java
 RUN javac HelloWorld.java
 
+# Exponer el puerto en el que escuchará el servidor (8080)
+EXPOSE 8080
+
 # Comando para ejecutar el programa Java
 CMD ["java", "HelloWorld"]
